@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div(class=)
+      div(class)
+        div(class)
+          block sidebar
+            ul(class = 'sidebar-nav')
+              li
+                a(href='/catalog') Home
+              li
+                a(href='/catalog/books') All books
+              li
+                a(href='/catalog/authors') All authors
+              li
+                a(href='/catalog/genres') All genres
+              li
+                a(href='/catalog/bookinstances') All book-instances
+              li
+                hr
+              li
+                a(href='/catalog/author/create') Create new author
+              li
+                a(href='/catalog/genre/create') Create new genre
+              li
+                a(href='/catalog/book/create') Create new book
+              li
+                a(href='/catalog/bookinstance/create') Create new book instance (copy)
+
+        div(class)
+          block content
