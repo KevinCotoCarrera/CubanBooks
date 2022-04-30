@@ -5,13 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import AuthorList from './routes/authorList';
+import AuthorDetail from './routes/authorDetail'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="author_list" element={<AuthorList />}/>
+          <Route path="author" element={<AuthorList />}/>
+          <Route path="author/:id" element={<AuthorDetail/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

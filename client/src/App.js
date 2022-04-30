@@ -3,7 +3,7 @@ function App() {
     return (
     <div className="App p-10">
       <ul>
-        <Link to="author_list">Author List</Link>
+        <Link to="author">Author List</Link>
       </ul>
       <Outlet />
     </div>

@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@admin-bro/express': ^3.1.0
+  '@admin-bro/mongoose': ^1.1.0
   admin-bro: ^4.0.1
   async: ^3.2.3
   concurrently: ^7.1.0
@@ -14,12 +15,13 @@ specifiers:
   express-validator: ^6.14.0
   http-errors: ~1.6.3
   luxon: ^2.3.1
-  mongoose: ^6.2.11
+  mongoose: ^6.3.1
   morgan: ~1.9.1
   pug: 2.0.0-beta11
 
 dependencies:
   '@admin-bro/express': 3.1.0_1fdc2fde8669f4c43877f89f579ae9be
+  '@admin-bro/mongoose': 1.1.0_admin-bro@4.0.1+mongoose@6.3.1
   admin-bro: 4.0.1_debug@2.6.9
   async: 3.2.3
   concurrently: 7.1.0
@@ -70,6 +72,19 @@ packages:
       express: 4.16.4
       express-formidable: 1.2.0
       express-session: 1.17.2
+    dev: false
+
+  /@admin-bro/mongoose/1.1.0_admin-bro@4.0.1+mongoose@6.3.1:
+    resolution: {integrity: sha512-CMFfN12UV3VE3nZxvZMZK+deCqiU6hPvv6bDLuPzMV0KySPZLoEQe2rHuxgovEDn52bFXP0XPFMDHqW0FiNtfg==}
+    peerDependencies:
+      admin-bro: '>=3.3.1'
+      mongoose: '>=5'
+    dependencies:
+      admin-bro: 4.0.1_debug@2.6.9
+      escape-regexp: 0.0.1
+      flat: 4.1.1
+      lodash: 4.17.21
+      mongoose: 6.3.1
     dev: false
 
   /@ampproject/remapping/2.1.2:
@@ -2437,6 +2452,10 @@ packages:
 
   /escape-html/1.0.3:
     resolution: {integrity: sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=}
+    dev: false
+
+  /escape-regexp/0.0.1:
+    resolution: {integrity: sha1-9EvaEtRbvfnLf4Yu5+SCez3TIlQ=}
     dev: false
 
   /escape-string-regexp/1.0.5:

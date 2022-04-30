@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import {Link} from "react-router-dom"
 
 function AuthorList() {
   const [info, setInfo] = useState([])
@@ -12,7 +13,7 @@ function AuthorList() {
    }, []);
    
    const author_list = info.map((author) =>
-   <li key ={author._id}>{author.first_name}</li>
+   <li key ={author._id}><Link to={author._id}>{author.first_name}</Link></li>
    );
 
     return (
